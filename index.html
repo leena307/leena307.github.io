@@ -1,96 +1,762 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leena Chatterjee - Portfolio</title>
+
+  <head>
+    <title>Leena Chatterjee</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="correct-sha512-hash" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <style>
+      /*======================================
+//--//-->   ABOUT
+======================================*/
+
+      .about-mf .box-shadow-full {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+
+      .about-mf .about-img {
+        margin-bottom: 2rem;
+      }
+
+      .about-mf .about-img img {
+        margin-left: 10px;
+      }
+
+      .skill-mf .progress {
+        /* background-color: #cde1f8; */
+        margin: 0.5rem 0 1.2rem;
+        border-radius: 0;
+        height: 0.7rem;
+      }
+
+      .skill-mf .progress .progress-bar {
+        height: 0.7rem;
+        background-color: #ffbd39;
+      }
+
+      /* Animation styles */
+      #typing-animation {
+        position: relative;
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 3s steps(20, end) infinite;
+      }
+
+      #typing-animation:before {
+        content: "";
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #ccc;
+        animation: typing-cursor 0.5s ease-in-out infinite;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes typing-cursor {
+        from {
+          width: 5px;
+        }
+
+        to {
+          width: 0;
+        }
+      }
+
+      /* project image zoom effect */
+
+      .zoom-effect {
+        overflow: hidden;
+        transition: transform 0.3s ease-out;
+      }
+
+      .zoom-effect:hover {
+        transform: scale(1.1);
+      }
+
+      @media screen and (orientation: portrait) {
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #007bff; /* Blue background */
-            color: #ffffff;
+          margin-left: 5%;
+          margin-right: 5%;
         }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #ffffff;
-            padding: 10px 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            color: #007bff;
+
+        .order-md-last {
+          visibility: hidden;
         }
-        header > h1 {
-            margin: 0;
-            color: #007bff;
+
+        .about-img img {
+          content: url("images/lee.png");
         }
-        .contact-info {
-            text-align: right;
-        }
-        .contact-info a {
-            display: inline-block;
-            padding: 10px;
-            background-color: #ffffff;
-            color: #007bff;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-left: 10px;
-            font-weight: bold;
-        }
-        .contact-info a:hover {
-            background-color: #f8f9fa;
-        }
-        .resume-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #ffffff;
-            color: #000000; /* Black color for the link */
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        section {
-            margin: 20px;
-            padding: 10px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            color: #007bff;
-        }
-        .profile-picture {
-            display: block;
-            margin: 20px auto;
-            max-width: 200px;
-            border-radius: 50%;
-            border: 5px solid #ffffff;
-        }
+      }
     </style>
-</head>
-<body>
-    <header>
-        <h1>Leena Chatterjee</h1>
-        <div class="contact-info">
-            <a href="mailto:leena.chatterjee@example.com">Email</a> <!-- Replace with your actual email address -->
-            <a href="tel:+917406951818">Contact</a>
-            <a href="https://www.linkedin.com/in/leena-bh%F0%9F%A7%BF%F0%9F%A7%BF%F0%9F%A7%BF-064a5b200/" target="_blank">LinkedIn</a>
+
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Leena Chatterjee</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span>
+          Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item">
+              <a href="#home-section" class="nav-link">
+                <span>Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#about-section" class="nav-link">
+                <span>About</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#resume-section" class="nav-link">
+                <span>Resume</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact-section" class="nav-link">
+                <span>Contact</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#send-message" class="nav-link">
+                <span>Let me know your thoughts.</span></a>
+            </li>
+          </ul>
         </div>
-    </header>
+      </div>
+    </nav>
+    <section id="home-section" class="hero">
+      <div class="home-slider  owl-carousel">
+        <div class="slider-item ">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+              <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/lee.png); height: 50%;">
+                <div class="overlay"></div>
+              </div>
+              <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                <div class="text">
+                  <span class="subheading">Hello!</span>
+                  <h1 class="mb-4 mt-3">I'm
+                    <span>Leena Chatterjee</span></h1>
 
-    <section id="profile">
-        <img src="path_to_your_image.jpg" alt="Leena Chatterjee" class="profile-picture"> <!-- Replace "path_to_your_image.jpg" with the actual path to your image -->
+                  <!-- Element to contain animated typing -->
+                  <span id="typing-animation"></span>
+
+                  <script>
+                    // Initialize the typing animation
+                    const typingAnimationElement = document.getElementById('typing-animation');
+
+                    // Create an array of typing text
+                    const typingTexts = ['Data Scientist     ', 'Data Engineer     ', 'Data & AI    '];
+
+                    // Create a function to display the typing animation for a given text
+                    function playTypingAnimation(text) {
+                      // Loop through each character and add it to the element
+                      for (let i = 0; i < text.length; i++) {
+                        setTimeout(() => {
+                          typingAnimationElement.textContent += text[i];
+                        }, i * 100); // Decreased delay to speed up the typing animation
+                      }
+
+                      // Once the animation is complete, reset the text and start over
+                      setTimeout(() => {
+                        typingAnimationElement.textContent = '';
+                        playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                      }, text.length * 100); // Adjusted delay accordingly
+                    }
+
+                    // Start the typing animation loop
+                    playTypingAnimation(typingTexts[0]);
+                  </script><br><br>
+                  
+                  <p>
+                    
+                      <a href="https://chatbot-genai-leena.streamlit.app/" class="btn btn-primary py-3 px-4" target="_blank" style="background-color: purple;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                          <path d="M9 2C8.44772 2 8 2.44772 8 3V4C8 4.55228 8.44772 5 9 5H15C15.5523 5 16 4.55228 16 4V3C16 2.44772 15.5523 2 15 2H9ZM4 6H5C5.55228 6 6 6.44772 6 7V9C6 10.0609 6.7746 10.9796 7.75 11.3612V12H8.25C8.66421 12 9 12.3358 9 12.75V13.5C9 13.7761 9.22386 14 9.5 14H10.5C10.7761 14 11 13.7761 11 13.5V12.75C11 12.3358 11.3358 12 11.75 12H12.25C12.4454 12 12.6348 12.0748 12.7856 12.2104L14.7856 14.2104C14.9748 14.3639 15.1317 14.5603 15.2432 14.7862L16.2432 17.2862C16.3897 17.5686 16.3745 17.891 16.2049 18.1497C16.0354 18.4085 15.7394 18.5583 15.4251 18.5583H8.57494C8.26062 18.5583 7.96459 18.4085 7.79512 18.1497C7.62555 17.891 7.61034 17.5686 7.75684 17.2862L8.75684 14.7862C8.86827 14.5603 9.02523 14.3639 9.21442 14.2104L11.2144 12.2104C11.3652 12.0748 11.5546 12 11.75 12H12.25C12.6642 12 13 12.3358 13 12.75V13.5C13 13.7761 13.2239 14 13.5 14H14.5C14.7761 14 15 13.7761 15 13.5V12.75C15 12.3358 15.3358 12 15.75 12H16.25C16.6642 12 17 12.3358 17 12.75V11.3612C17.9754 10.9796 18.75 10.0609 18.75 9V7C18.75 6.44772 19.1977 6 19.75 6H20V7C20 9.20914 18.2091 11 16 11H8C5.79086 11 4 9.20914 4 7V6Z"/>
+                        </svg>
+                        GENAI
+                      </a>
+                      
+
+                    <a href="https://www.linkedin.com/in/leena-bh%F0%9F%A7%BF%F0%9F%A7%BF%F0%9F%A7%BF-064a5b200/" class="btn btn-white btn-outline-white py-3 px-4" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                          <path d="M20,0H4C1.8,0,0,1.8,0,4v16c0,2.2,1.8,4,4,4h16c2.2,0,4-1.8,4-4V4C24,1.8,22.2,0,20,0z M7.5,20H4V9h3.5V20z M5.8,7.4 C4.9,7.4,4.3,6.8,4.3,6s0.5-1.4,1.4-1.4s1.4,0.6,1.4,1.4S6.7,7.4,5.8,7.4z M20,20h-3.5v-5.6c0-1.3,0-3-1.8-3c-1.8,0-2,1.4-2,2.9 V20h-3.5V9h3.3v1.6h0c0.5-0.9,1.7-1.8,3.3-1.8c3.5,0,4.2,2.3,4.2,5.3V20z"/>
+                        </svg>
+                        Linkedin
+                      </a>
+                      
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="cv">
-        <h2>Curriculum Vitae</h2>
-        <p>A brief overview of your professional and educational background. You can expand this into a detailed CV section or keep it concise.</p>
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="row d-flex align-items-stretch">
+            <!-- <div class="row d-flex"> -->
+            <div class="col-md-6 col-lg-5 d-flex">
+              <div class="img-about img d-flex align-items-stretch">
+                <div class="overlay">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="images\LEENA .png" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <!-- Details next to profile image -->
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p>
+                          <span class="title-s">Name:
+                          </span>
+                          <span>LC</span></p>
+                        <p>
+                          <span class="title-s">Job Role:
+                          </span>
+                          <span>Data Engineer/ Data Scientist</span></p>
+                        <p>
+                          
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="skill-mf">
+                    <p class="title-s">Skills</p>
+                    <span>Python</span>
+                    <!-- <span class="pull-right">85%</span> -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <span>SQL</span>
+                    <!-- <span class="pull-right">95%</span> -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 99%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <span>Databricks</span>
+                    <!-- <span class="pull-right">85%</span> -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <span>Alteryx</span>
+                    <!-- <span class="pull-right">99%</span> -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <span>PostgreSQL</span>
+                    <!-- <span class="pull-right">99%</span> -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>GENAI</span>
+                    <!-- <span class="pull-right">99%</span> -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Deep Learning</span>
+                    <!-- <span class="pull-right">99%</span> -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Natural Language processing(NLP)</span>
+                    <!-- <span class="pull-right">99%</span> -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Cloud Computing</span>
+                    <!-- <span class="pull-right">99%</span> -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+    
+
+                    <span>Machine Learning</span>
+                    <!-- <span class="pull-right">99%</span> -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+              <div class="row justify-content-start pb-3">
+                <div class="col-md-12 heading-section ftco-animate">
+
+                  <h1 class="big">About</h1>
+                  <h2 class="mb-4">About Me</h2>
+
+                  <p>I am an experienced Software Engineer with a proven track record in Big Data and Machine Learning at a renowned IT company. Proficient in Python, SQL, PyTorch, TensorFlow, XML, JSON, OpenVINO, Azure, LLM, LangChain, and more, I firmly believe that discipline is the key to success. Dedicated to my work and passionate about coding, I am always eager to learn new technologies and strive to stay updated.
+
+                    The hunger for learning never dies, and I am now embarking on a new adventure: Consulting. My desire is to impart my expertise, bestowing upon businesses the transformative might of data. Thank you!
+                    
+                    Apart from work, I also enjoy watching American television series, specifically to learn the American accent. During leisure time, I engage in web browsing to stay consistently updated about my surroundings. I am a quick learner and firmly believe in the value of hard work. My aspiration is to achieve top-notch success in my career. I also have a passion for reading storybooks. In a nutshell, this encapsulates my interests and professional mindset..</p>
+                  <ul class="about-info mt-4 px-md-0 px-2">
+                    <li class="d-flex">
+                      <span>Profile:</span>
+                      <span><a href="https://en.wikipedia.org/wiki/Data_engineering" target="_blank">Data Engineer/ML Engineer/ Data Science/ Consulting/ Gen AI/ Mlops/GitOPS/AIOPS</a></span></li>
+                    <li class="d-flex">
+                      <span>Domain:</span>
+                      <span><a href="https://en.wikipedia.org/wiki/Data_science" target="_blank">I have domain experience in Data Science and AI across various industries, including Retail, FMCG, Healthcare, Automobile, Banking & Finance, Telecommunications, Energy, Manufacturing, Insurance, Education, E-commerce, Entertainment & Media, and Logistics & Supply Chain.</a></span></li>
+                    <li class="d-flex">
+                      <span>Education:</span>
+                      <span><a href="https://en.wikipedia.org/wiki/Master" target="_blank">B-tech(ECE) & M-tech(DS & AI)</a></span></li>
+                    <li class="d-flex">
+                      <span>Language:</span>
+                      <span>
+                        <a href="https://en.wikipedia.org/wiki/English_language" target="_blank">English</a>,
+                        <a href="https://hi.wikipedia.org/wiki/%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80" target="_blank">Hindi</a> ,
+                        <a href="https://en.wikipedia.org/wiki/Bengali_language" target="_blank">Bengali</a> 
+                        
+                    <!-- <li class="d-flex"> <span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li> -->
+                    <li class="d-flex">
+                      <span>Other Skills:</span>
+                      <span>
+                         Communication skills, quick learning skills &amp;  Time management, Consulting</span></li>
+                    <li class="d-flex">
+                      <span>Interest:</span>
+                      <span>Coding, Travelling, Driving, Photography </span></li>
+
+                  </ul>
+                </div>
+              </div>
+
+              <div class="counter-wrap ftco-animate d-flex mt-md-3">
+                <div class="text">
+                  
+                  <p>
+                    <a href="https://www.linkedin.com/in/leena-bh%F0%9F%A7%BF%F0%9F%A7%BF%F0%9F%A7%BF-064a5b200/" class="btn btn-primary py-3 px-3" target="_blank">LinkedIn</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="resume">
-        <h2>Download Resume</h2>
-        <a href="" class="resume-button" download>Download Resume</a>
-       
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+      <div class="container">
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Leena Chatterjee is a Lead Data Scientist with 6.6+ years of experience across banking, finance, marketing, retail, medical, FMCG, automobile, and technology industries. Proficient in Python, R, Machine Learning, Deep Learning, SQL, and data engineering, she has expertise in cloud (Azure) and on-premises environments, with hands-on experience in MySQL and PostgreSQL. Skilled in tools like Intel Neural Compressor, OpenVINO, and advanced processors (Cascade Lake, Skylake), she combines innovation and precision to deliver impactful, data-driven solutions. Leena excels in tackling complex business challenges across various domains, bringing a blend of innovation and precision to every project.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <h1 class="big-4">Experience</h1>
+          <div class="underline"></div>
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+
+              <h2>Product IT Specialist  </h2>
+              <span class="position">Volkswagan</span>
+            </div>
+            <div class="resume-wrap ftco-animate">
+
+              <h2>Sr Consultant</h2>
+              <span class="position">Capgemini</span>
+            </div>
+            <div class="resume-wrap ftco-animate">
+
+              <h2>Accenture</h2>
+              <span class="position">Machine learning Engineer</span>
+            </div>
+            <div class="resume-wrap ftco-animate">
+
+              <h2>Cognizant</h2>
+              <span class="position">Business Analyst</span>
+            </div>
+            <div class="resume-wrap ftco-animate">
+
+              <h2>CSS CORP</h2>
+              <span class="position">Engineer</span>
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+            <!-- we can pass more experiene here  -->
+
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+          <h1 class="big-4">Education</h1>
+          <div class="underline"></div>
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">M-tech</span>
+              <h2> Data Science & Artifacial intelligence</h2>
+              <span class="position">IIT Patna</span>
+              <p class="mt-4">Grade: First class.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">Post Graduate Diploma</span>
+              <h2> Data science ,Machine Learning and Neural Networks </h2>
+              <span class="position">Data Trained Education, Bengaluru, Karnataka</span>
+               <p class="mt-4">Grade: First class.</p> 
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">B-tech</span>
+              <h2>ECE</h2>
+              <span class="position">WBUT</span>
+              <p class="mt-4">Grade: 8.3</p>
+            </div>
+          </div>
+          
+        </div>
+
+        <!-- <div class="row justify-content-center mt-5">
+          <div class="col-md-6 text-center ftco-animate">
+            <p>
+                <!-- always update the latest resume -->
+              <a href="" class="btn btn-primary py-4 px-5" target="_blank">Download Cover letter</a>
+            </p>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- updated code snippet -->
+<div class="row justify-content-center mt-5">
+  <div class="col-md-6 text-center ftco-animate">
+    <p>
+      <a 
+        href="https://drive.google.com/file/d/1CwOA90WNktVJtTMFKUJcytlcl-P_MQOJ/view?usp=drive_link" 
+        class="btn btn-primary py-4 px-5" 
+        target="_blank"
+      >
+        Download Cover Letter
+      </a>
+    </p>
+  </div>
+</div>
+
+    </section>
+<!--  -->
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="hid" style="visibility:hidden">
+        <div class="container">
+          <div class="row d-md-flex align-items-center">
+            <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+              <div class="block-18">
+                <div class="text">
+                  <strong class="number" data-number="20">0</strong>
+                  <span>Certification</span>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+              <div class="block-18">
+                <div class="text">
+                  <strong class="number" data-number="1">0</strong>
+                  <span><a href="https://medium.com/@leenachatterjee00"  target="_blank">Blogs</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/H.png)">
+        <!-- <div class="container"> -->
+        <div class="row justify-content-center">
+          <div class="col-md-7 ftco-animate text-center">
+            <h2>
+                <span style="color: rgb(212, 0, 255);">Here's my </span>
+                <span>
+                    <button id="gitbtn" class="btn btn-primary py-3 px-5" onclick="gitClick()">
+                        <i class="fab fa-github"></i> GitHub
+                    </button>
+                </span>
+            </h2>
+            
+            <div class="heading">
+              <h4 style="color: rgba(208, 255, 0, 0.753); font-weight: bold;">
+                🌟 Your Knowledge, Your Wings – Dream Big, Fly High 🌟The wings belong to you, and the sky belongs to no one.Believe in yourself. Believe in the Universe. It will guide you, lift you, and show you the way.!!
+              </h4>
+              <br>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
     </section>
 
-</body>
-</html>
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-map-signs"></span>
+              </div>
+              <h3 class="mb-4">Address</h3>
+              <p>Bengaluru 560067</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-phone2"></span>
+              </div>
+              <h3 class="mb-4">Contact Number</h3>
+              <p id="phone-number">+91 *******818</p>
+              <!--<button onclick="revealPhoneNumber()" class="btn btn-primary">Reveal Phone Number</button>-->
+            </div>
+          </div>
+          
+          <script>
+            function revealPhoneNumber() {
+              const passcode = prompt("Enter the passcode to reveal the phone number:");
+              if (passcode === "ABCD") {
+                document.getElementById("phone-number").textContent = "+91 7406951818";
+              } else {
+                alert("Incorrect passcode. Please try again.");
+              }
+            }
+          </script>
+        
+          
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-paper-plane"></span>
+              </div>
+              <h3 class="mb-4">Email Address</h3>
+              <p>
+                <a href="mailto:leena.chatterjee.1176job@gmail.com">leena.chatterjee.1176job@gmail.com</a>
+              </p>
+            </div>
+          </div>
+          <!-- Modify the Resume Download Section -->
+<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+  <div class="align-self-stretch box p-4 text-center">
+    <div class="icon d-flex align-items-center justify-content-center">
+      <span class="icon-globe"></span>
+    </div>
+    <h3 class="mb-4">Download Resume</h3>
+    <p>
+      <button onclick="downloadResume()" class="btn btn-primary">Download Resume</button>
+    </p>
+  </div>
+</div>
+
+<script>
+  function downloadResume() {
+    const passcode = prompt("Enter the passcode to download the resume:");
+    if (passcode === "ABCD") {
+      window.open("https://drive.google.com/file/d/1EyC41Wq6SP2ZyuJc-zlnXsP_Y6kLH-L4/view?usp=sharing", "_blank");
+    } else {
+      alert("Incorrect passcode. Please try again.");
+    }
+  }
+</script>
+
+          </div>
+
+          <div class="container">
+            <br>
+            <br>
+            <div class="row justify-content-center">
+              <div class="col-md-7 ftco-animate text-center">
+                <h2>Have a<span>
+                    Question?
+                  </span>
+                </h2>
+                <div class="que" id="send-message">
+                  <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="9ac58b05-447c-4c86-a79d-7caf0418d994">
+                    <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                      <div class="col-12">
+                        <label for="fullname" class="form-label">Full Name
+                          <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="fullname" name="fullname" value="" required="required">
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <label for="email" class="form-label">Email
+                          <span class="text-danger">*</span></label>
+                        <div class="input-group">
+                          <span class="input-group-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewbox="0 0 16 16">
+                              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                            </svg>
+                          </span>
+                          <input type="email" class="form-control" id="email" name="email" value="" required="required">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <div class="input-group">
+                          <span class="input-group-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewbox="0 0 16 16">
+                              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                            </svg>
+                          </span>
+                          <input type="tel" class="form-control" id="phone" name="phone" value="">
+                        </div>
+                      </div><br>
+                      <div class="col-12">
+                        <label for="subject" class="form-label">Subject
+                          <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="subject" name="subject" value="" required="required">
+                      </div>
+                      <div class="col-12">
+                        <label for="message" class="form-label">Message
+                          <span class="text-danger">*</span></label>
+                        <textarea class="form-control" id="message" name="message" rows="3" required="required"></textarea>
+                      </div>
+                      <div class="col-12">
+                        <div class="d-grid"><br>
+                          <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <br>
+            <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+              <li class="ftco-animate normal-txt">Find me on
+              </li>
+              <!-- <li class="ftco-animate"> <a href="htt"> <span class="icon-youtube"></span></a> </li> -->
+              <li class="ftco-animate">
+                <a href="https://www.linkedin.com/in/leena-bh%F0%9F%A7%BF%F0%9F%A7%BF%F0%9F%A7%BF-064a5b200/" target="_blank">
+                  <span class="icon-linkedin"></span></a>
+              </li>
+              
+            </ul>
+            <br>
+          </div>
+        </div>
+      </section>
+
+      <footer class="ftco-footer ftco-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;<script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+
+      <!-- loader -->
+      <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+          <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+          <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg>
+      </div>
+
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery-migrate-3.0.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/jquery.waypoints.min.js"></script>
+      <script src="js/jquery.stellar.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/jquery.animateNumber.min.js"></script>
+      <script src="js/scrollax.min.js"></script>
+
+      <script src="js/main.js"></script>
+      <script>
+        function gitClick() {
+          window.location.href = 'https://github.com/leenachatterjee';
+        }
+      </script>
+
+    </body>
+
+  </html>
