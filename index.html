@@ -574,7 +574,7 @@
               </div>
               <h3 class="mb-4">Contact Number</h3>
               <p id="phone-number">+91 *******818</p>
-              <!--<button onclick="revealPhoneNumber()" class="btn btn-primary">Reveal Phone Number</button>-->
+              <button onclick="revealPhoneNumber()" class="btn btn-primary">Phone Number</button>-->
             </div>
           </div>
           
@@ -582,7 +582,7 @@
             function revealPhoneNumber() {
               const passcode = prompt("Enter the passcode to reveal the phone number:");
               if (passcode === "ABCD") {
-                document.getElementById("phone-number").textContent = "+91 7406951818";
+                document.getElementById("phone-number").textContent = "NA";
               } else {
                 alert("Incorrect passcode. Please try again.");
               }
@@ -618,7 +618,7 @@
   function downloadResume() {
     const passcode = prompt("Enter the passcode to download the resume:");
     if (passcode === "ABCD") {
-      window.open("https://drive.google.com/file/d/1EyC41Wq6SP2ZyuJc-zlnXsP_Y6kLH-L4/view?usp=sharing", "_blank");
+      window.open("........", "_blank");
     } else {
       alert("Incorrect passcode. Please try again.");
     }
